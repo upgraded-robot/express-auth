@@ -1,0 +1,11 @@
+<h2>New User</h2>
+{{#if error}}
+    <div class="errors">{{error}}</div>
+{{/if}}
+<form method='post' action="/users">
+	<label for="username">Username</label>
+	<input type="text" name="user[username]">
+	<label for="pass">Password</label>
+	<input type="password" name="user[pass]">
+	<button type="submit">New User</button>
+</form>
